@@ -37,6 +37,7 @@ export PRIVATE_KEY_LOCAL=your_private_key_here
 export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,optimism-sepolia,l1rn'
 ```
 ### Servis oluşturalım
+Private keyinizi yamayın unutmayın!!!
 ```
 nano /etc/systemd/system/executor.service
 ```

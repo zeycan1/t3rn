@@ -36,6 +36,41 @@ export PRIVATE_KEY_LOCAL=your_private_key_here
 ```
 export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,optimism-sepolia,l1rn'
 ```
+### Servis oluşturalım
+```
+nano /etc/systemd/system/executor.service
+```
+```
+[Unit]
+Description=Executor Service
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/executor/executor/bin/
+Environment="NODE_ENV=testnet"
+Environment="LOG_LEVEL=debug"
+Environment="LOG_PRETTY=false"
+Environment="PRIVATE_KEY_LOCAL=private-yaz"
+Environment="ENABLED_NETWORKS=arbitrum-sepolia,base-sepolia,optimism-sepolia,l1rn"
+ExecStart=/root/executor/executor/bin/executor
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+EOF
+```
+```
+sudo systemctl daemon-reload
+sudo systemctl enable executor.service
+sudo systemctl start executor.service
+```
+### Logları başlatalım
+```
+sudo journalctl -u executor.service -f
+```
+
 ### Yöneticiyi Başlatın
 ```
 ./executor

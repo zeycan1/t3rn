@@ -71,10 +71,6 @@ sudo systemctl start executor.service
 sudo journalctl -u executor.service -f
 ```
 
-### Yöneticiyi Başlatın
-```
-./executor
-```
 ### Testnet üzerinde işlem siparişlerine teklif vermek için BRN jetonları gereklidir. Testnet BRN jetonlarını faucetten alın
 ```
 https://faucet.t3rn.io/

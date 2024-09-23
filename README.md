@@ -74,9 +74,9 @@ sudo journalctl -u executor.service -f
 ```
 
 ### Testnet üzerinde işlem siparişlerine teklif vermek için BRN jetonları gereklidir. Testnet BRN jetonlarını faucetten alın
-```
-https://faucet.t3rn.io/
-```
+
+### https://faucet.brn.t3rn.io/
+
 ### molla202 hocam sağolsun nodeyi servise çevirdi 🙏
 
 

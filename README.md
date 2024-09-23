@@ -76,9 +76,7 @@ sudo journalctl -u executor.service -f
 ```
 https://faucet.t3rn.io/
 ```
-
-
-
+### molla202 hocam sağolsun nodeyi servise çevirdi 🙏
 
 
 

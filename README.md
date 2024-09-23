@@ -13,6 +13,7 @@
 ```
 wget https://github.com/t3rn/executor-release/releases/download/v0.21.1/executor-linux-v0.21.1.tar.gz
 tar -xvf executor-linux-v0.21.1.tar.gz
+rm -rf executor-linux-v0.21.1.tar.gz
 ```
 ```
 cd executor/executor/bin
